@@ -5,6 +5,11 @@ There are many ways to run / compile TypeScript files.
 
 ## Configuration Example 1
 
+1. Include index.ts in index.html `<script src="index.ts"></script>`
+2. `parcel index.html`
+
+## Configuration Example 2
+
 1. `tsc --init`
 2. tsconfig.json, compilerOptions:
 
@@ -22,8 +27,11 @@ There are many ways to run / compile TypeScript files.
     "start": "concurrently npm:start:*"
 ```
 
+5. `npm start`
+
 ## Helpful packages
 
 - concurrently
 - nodemon
-- parcel
+- parcel-bundler
+- ts-node

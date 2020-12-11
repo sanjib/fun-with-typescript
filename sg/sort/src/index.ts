@@ -1,12 +1,22 @@
-console.log('testing 123...')
+import { NumbersCollection } from './NumbersCollection'
+import { CharactersCollection } from './CharactersCollection'
+import { LinkedList } from './LinkedList'
 
-interface TestLocation {
-  lat: number
-  lng: number
-}
+// Sort number[]
+const c1 = new NumbersCollection([10, 3, -5, 0])
+c1.sort()
+console.log('c1:', c1.data)
 
-const logSomething = (loc: TestLocation): void => {
-  console.log(`Lat: ${loc.lat}, Lng: ${loc.lng}`)
-}
+// Sort string
+const c2 = new CharactersCollection('Xaayb')
+c2.sort()
+console.log('c2:', c2.data)
 
-logSomething({ lat: 22, lng: 33 })
+// Sort linked list
+const c3 = new LinkedList()
+c3.add(50)
+c3.add(-10)
+c3.add(-3)
+c3.add(4)
+c3.sort()
+c3.print('c3:')

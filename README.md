@@ -31,7 +31,9 @@ There are many ways to run / compile TypeScript files.
 
 ## Helpful packages
 
+- @types/faker, @types/googlemaps
 - concurrently
+- faker
 - nodemon
 - parcel-bundler
 - ts-node
